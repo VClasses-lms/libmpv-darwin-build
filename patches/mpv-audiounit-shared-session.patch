@@ -37,7 +37,7 @@
 +
 +    if (audiounit_session_use_count == 0) {
 +        [instance setCategory:AVAudioSessionCategoryPlayback
-+                  withOptions:AVAudioSessionCategoryOptionMixWithOthers
++                  withOptions:0
 +                        error:nil];
 +        [instance setMode:AVAudioSessionModeMoviePlayback error:nil];
 +        [instance setActive:YES error:nil];
